@@ -1,48 +1,69 @@
 <?php
-    header("Access-Control-Allow-Origin: *");
-    header("Content-Type: application/json; charset=UTF-8");
-    
-    include_once '../config/database.php';
-    include_once '../class/employees.php';
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json; charset=UTF-8");
 
-    $database = new Database();
-    $db = $database->getConnection();
+include_once '../config/database.php';
+include_once '../class/employees.php';
+include_once '../class/Artist.php'; // Include the Artist class
 
-    $items = new Employee($db);
+$database = new Database();
+$db = $database->getConnection();
 
-    $stmt = $items->getEmployees();
+$data = json_decode(file_get_contents("php://input"));
+
+if (isset($data->table) && ($data->table === 'employee' || $data->table === 'artist')) {
+    if ($data->table === 'employee') {
+        $items = new Employee($db);
+        $stmt = $items->getEmployees();
+    } elseif ($data->table === 'artist') {
+        $items = new Artist($db);
+        $stmt = $items->getArtists();
+    }
+
     $itemCount = $stmt->rowCount();
 
+    if ($itemCount > 0) {
+        $response = array();
+        $response["body"] = array();
+        $response["itemCount"] = $itemCount;
 
-    echo json_encode($itemCount);
-
-    if($itemCount > 0){
-        
-        $employeeArr = array();
-        $employeeArr["body"] = array();
-        $employeeArr["itemCount"] = $itemCount;
-
-        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             extract($row);
-            $e = array(
-                "id" => $id,
-                "name" => $name,
-                "email" => $email,
-                "age" => $age,
-                "designation" => $designation,
-                "created" => $created
-            );
 
-            array_push($employeeArr["body"], $e);
+            if ($data->table === 'employee') {
+                $item = array(
+                    "id" => $id,
+                    "name" => $name,
+                    "email" => $email,
+                    "age" => $age,
+                    "designation" => $designation,
+                    "created" => $created
+                );
+            } elseif ($data->table === 'artist') {
+                $item = array(
+                    "counter" => $counter,
+                    "name" => $name,
+                    "nationality" => $nationality,
+                    "age" => $age,
+                    "gender" => $gender,
+                    "DOB" => $DOB,
+                    "alive" => $alive,
+                    "DOD" => $DOD,
+                    "FormalEducation" => $FormalEducation,
+                    "ArtMedium" => $ArtMedium
+                );
+            }
+
+            array_push($response["body"], $item);
         }
-        echo json_encode($employeeArr);
-    }
 
-
-    else{
+        echo json_encode($response);
+    } else {
         http_response_code(404);
-        echo json_encode(
-            array("message" => "No record found.")
-        );
+        echo json_encode(array("message" => "No records found."));
     }
+} else {
+    http_response_code(400);
+    echo json_encode(array("message" => "Invalid table name. Please specify 'employee' or 'artist' in your JSON input."));
+}
 ?>
