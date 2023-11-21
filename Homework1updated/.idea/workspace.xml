@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="48f28fc2-3125-441b-8dc6-802178a814a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Dockerize-PHP-Application/frontend/react-docker/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dockerize-PHP-Application/frontend/react-docker/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dockerize-PHP-Application/frontend/react-docker/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dockerize-PHP-Application/frontend/react-docker/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dockerize-PHP-Application/frontend/react-docker/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dockerize-PHP-Application/frontend/react-docker/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework1screenshots/createpostman.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework1screenshots/phpMyadmincreate.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework1screenshots/phpMyadmindelete.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework1screenshots/phpMyadminupdate.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework1screenshots/postmanDelete.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework1screenshots/postmanRead_single.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework1screenshots/postmanReadprt1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework1screenshots/postmanReadprt2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework1screenshots/updatepostman.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework2.jpg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2EjQBuAytGkyUkeXNNxdU6txA42" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/kerolosassad/Downloads/Dockerize-PHP-Application/app/api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.sync",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/api" />
+      <recent name="$PROJECT_DIR$/frontend" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/react-docker/src" />
+      <recent name="$PROJECT_DIR$/frontend/react-docker" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/backend" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/app/index.php">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="48f28fc2-3125-441b-8dc6-802178a814a7" name="Default Changelist" comment="" />
+      <created>1663106383523</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663106383523</updated>
+      <workItem from="1663106385536" duration="4770000" />
+      <workItem from="1663707531308" duration="5547000" />
+      <workItem from="1665508029389" duration="8479000" />
+      <workItem from="1666125701107" duration="7242000" />
+      <workItem from="1666580017521" duration="4095000" />
+      <workItem from="1667169507578" duration="1066000" />
+      <workItem from="1667878599890" duration="1464000" />
+      <workItem from="1668490367432" duration="463000" />
+      <workItem from="1669070345176" duration="2282000" />
+      <workItem from="1669155499950" duration="1246000" />
+      <workItem from="1669157232038" duration="10971000" />
+      <workItem from="1669263664300" duration="5015000" />
+      <workItem from="1670074916886" duration="10318000" />
+      <workItem from="1671471069757" duration="1580000" />
+      <workItem from="1671777864401" duration="459000" />
+      <workItem from="1695155852593" duration="2596000" />
+      <workItem from="1695771612475" duration="974000" />
+      <workItem from="1695772857494" duration="29268000" />
+      <workItem from="1697584964079" duration="37000" />
+      <workItem from="1697587568315" duration="35357000" />
+      <workItem from="1700011781856" duration="706000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/backend/index.php</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/backend/api/read.php</url>
+          <line>8</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
