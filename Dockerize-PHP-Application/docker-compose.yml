@@ -20,7 +20,6 @@ services:
       - db
 
   db:
-    platform: linux/x86_64
     image: mysql:5.7
     container_name: mysqldb
     environment:
@@ -44,9 +43,17 @@ services:
     restart: always
     ports:
       - 8081:80
-
-
-
-
+  mydemoreactimage:
+    image: mydemoreactimage
+    container_name: mydemoreactimage
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend/react-docker:/app
+    ports:
+      - 3000:3000
+    environment:
+      - WATCHPACK_POLLING=true
 volumes:
   dbdata:

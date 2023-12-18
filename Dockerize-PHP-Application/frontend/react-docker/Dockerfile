@@ -1,16 +1,28 @@
-FROM node:18.12.1-alpine
+# Use the official Node.js image with a specified version
+FROM node:14-alpine
+
+# Set the working directory inside the container
 WORKDIR /app
-# add `/app/node_modules/.bin` to $PATH
+
+# Add `/app/node_modules/.bin` to $PATH
 ENV PATH /app/node_modules/.bin:$PATH
-COPY . / /app/
 
-# install app dependencies
-COPY package.json ./
-COPY package-lock.json ./
+# Copy the package.json and package-lock.json files to the container
+COPY package.json package-lock.json /app/
+
+# Install app dependencies
 RUN npm install
-RUN npm install react-scripts@latest -g
 
+# Install create-react-app globally
+RUN npm install -g create-react-app
 
+# Copy the entire application to the container
+COPY . /app/
 
-# start app
+# Install Material-UI and other dependencies
+RUN npm install @mui/material @emotion/react @emotion/styled
+
+RUN npm run build
+
+# Start the application
 CMD ["npm", "start"]
